@@ -4,16 +4,18 @@ A machine learning-powered web application that predicts the best doctors (NPIs)
 NPI Survey Predictor
 
 # 2️⃣ Overview
-This project aims to optimize survey invitations for doctors (NPIs) based on their engagement patterns. Instead of sending mass emails, the system predicts the best doctors to invite at a given time, increasing response rates.
+This web application helps predict the best doctors (NPIs) to invite for a survey based on their past login/logout activity. Instead of sending survey emails to all doctors, this tool filters and selects those most likely to be available at a given time.
 
 # 3️⃣ Features
-✅ Time-based prediction: Input a time, get a list of doctors likely to attend.
-✅ Machine learning-based selection: Uses past login/logout activity and attempts data.
-✅ Downloadable CSV output: Export the selected NPIs as a file.
-✅ Interactive UI: Simple and easy-to-use web interface.
+✅ Input a time (HHMM format) and get a list of available doctors.
+✅ Uses past login/logout activity for prediction.
+✅ CSV-based data processing for flexibility.
+✅ REST API endpoint (/predict) to fetch doctor availability.
+✅ Download results as a CSV file for further analysis.
+✅ Stylish and responsive frontend using HTML, CSS, and JavaScript.
 
 # 4️⃣ Tech Stack
 Backend: Flask (Python)
 Frontend: HTML, CSS, JavaScript
-Machine Learning: (Mention the algorithm used, e.g., Logistic Regression, Random Forest, etc.)
-Database/Dataset: Dummy NPI dataset
+Data Processing: Pandas
+Machine Learning: Label Encoding (for Availability)

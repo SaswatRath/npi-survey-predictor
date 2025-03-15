@@ -1,6 +1,6 @@
 # Installation & Setup
 ## 1. Clone the Repository
-git clone https://github.com/yourusername/npi-survey-predictor.git
+git clone https://github.com/SaswatRath/npi-survey-predictor
 cd npi-survey-predictor
 
 ## 2. Install Backend Dependencies

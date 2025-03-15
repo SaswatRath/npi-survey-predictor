@@ -1,0 +1,142 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(120deg, #a8e6cf, #a1c4fd); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    width: 90%;
+    max-width: 600px;
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    color: #333;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #a8e6cf; 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #a8e6cf;
+    outline: none;
+    box-shadow: 0 0 5px rgba(168, 230, 207, 0.5);
+}
+
+button {
+    background: linear-gradient(120deg, #76c7c0, #a8e6cf); 
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background: linear-gradient(120deg, #a8e6cf, #76c7c0);
+    transform: scale(1.05);
+}
+
+#result-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#selected-time {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.doctors-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.doctors-table th,
+.doctors-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.doctors-table th {
+    background: #76c7c0; 
+    color: #fff;
+    font-weight: 600;
+}
+
+.doctors-table td {
+    background: #fff;
+}
+
+.error-message {
+    color: #d32f2f;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+#downloadCSV {
+    margin-top: 20px;
+    background: #5dade2;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+#downloadCSV:hover {
+    background: #85c1e9;
+}

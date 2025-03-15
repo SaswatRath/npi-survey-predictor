@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Availability</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <h2>Doctor Availability</h2>
+            <label>Enter Time (In 24 Hr format): </label>
+            <input type="text" id="timeInput" placeholder="e.g., 1330">
+            <button id="getDoctors">Get Available Doctors</button>
+        </div>
+
+        <div id="result-container">
+            <p id="selected-time"></p>
+            <div id="result"></div>
+            <button id="downloadCSV" style="display: none;">Download as CSV</button>
+        </div>
+    </div>
+</body>
+</html>
